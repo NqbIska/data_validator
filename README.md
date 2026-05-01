@@ -84,19 +84,19 @@ Download from [python.org](https://python.org) (version 3.8 or higher)
 
 ### Step 2: Create Project Folder
 
-```bash
+
 mkdir data-validator
 cd data-validator
 
-Step 4: Download Source Code
+Step 3: Download Source Code
 Save the code as data_validator.py in your project folder.
 
-Step 5: Run the Program
+Step 4: Run the Program
 
 python data_validator.py
 
-🚀 HOW TO RUN THE PROGRAM
-Step 1: Program Starts
+#🚀 HOW TO RUN THE PROGRAM
+## Step 1: Program Starts
 ======================================================================
 📊 MEGA DATA CLEANER & VALIDATOR
    Process 1 MILLION Records in Seconds
