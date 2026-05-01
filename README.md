@@ -1,23 +1,22 @@
- DATA CLEANER & VALIDATOR
+# 📊 DATA CLEANER & VALIDATOR
 
-#Name: Naqib Iskandar Bin Mohamad
+**Name:** Naqib Iskandar Bin Mohamad  
+**Student ID:** 2025424262  
+**Course Code:** ITT440: Network Programming  
+**Lecturer:** Shahadan Bin Saad  
 
-#Student ID: 2025424262#
+---
 
-#Course Code: ITT440: Network Programming#
+## 📋 TABLE OF CONTENTS
 
-#Lecturer: Shahadan Bin Saad #
-
-
-📋 TABLE OF CONTENTS
-1.	Project Introduction
-2.	System Requirements
-3.	Installation Steps
-4.	How to Run the Program
-5.	Program Features
-6.	Sample Input/Output
-7.	Conclusion
-8.	Source Code & Youtube link
+1. [Project Introduction](#project-introduction)
+2. [System Requirements](#system-requirements)
+3. [Installation Steps](#installation-steps)
+4. [How to Run the Program](#how-to-run-the-program)
+5. [Program Features](#program-features)
+6. [Sample Output](#sample-output)
+7. [Performance Results](#performance-results)
+8. [Source Code](#source-code)
 
 1.PROJECT INTRODUCTION
 
