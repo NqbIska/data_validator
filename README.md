@@ -292,7 +292,7 @@ Performance Graph
 |------|------|
 | **Source Code** | [data_validator.py](data_validator.py) |
 | **GitHub Repository** | [View on GitHub](https://raw.githubusercontent.com/NqbIska/data_validator/refs/heads/main/data_validator.py) |
-| **YouTube Demo** | [Click here for video]([https://youtu.be/your-video-link](https://youtu.be/ufTCl7xRaEQ)) |
+| **YouTube Demo** | [Click here for video](https://youtu.be/ufTCl7xRaEQ) |
 
 ---
 
