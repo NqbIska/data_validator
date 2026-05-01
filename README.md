@@ -1,6 +1,6 @@
  DATA CLEANER & VALIDATOR
 
-#Name: Naqib Iskandar Bin Mohamad#
+#Name: Naqib Iskandar Bin Mohamad
 
 #Student ID: 2025424262#
 
