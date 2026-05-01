@@ -97,11 +97,11 @@ python data_validator.py
 ---
 
 🚀 HOW TO RUN THE PROGRAM
-# Step 1: Program Starts
-======================================================================
-📊 MEGA DATA CLEANER & VALIDATOR
-   Process 1 MILLION Records in Seconds
-======================================================================
+### Step 1: Program Starts
+#======================================================================
+#📊 MEGA DATA CLEANER & VALIDATOR
+#   Process 1 MILLION Records in Seconds
+#======================================================================
 
 ⚙️  Configuration:
    • Target Records    : 1,000,000
