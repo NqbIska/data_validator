@@ -286,7 +286,13 @@ Performance Graph
 
 ---
 
-## Source code : 
+## SOURCE CODE & YOUTUBE
 
-## Youtube :
+| Item | Link |
+|------|------|
+| **Source Code** | [data_validator.py](data_validator.py) |
+| **GitHub Repository** | [View on GitHub](https://github.com/NAQIB-ISKANDAR/data-validator) |
+| **YouTube Demo** | [Click here for video](https://youtu.be/your-video-link) |
+
+---
 
