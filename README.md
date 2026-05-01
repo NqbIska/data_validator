@@ -171,9 +171,9 @@ python data_validator.py
 
 ---
 
-#⚙️ PROGRAM FEATURES
+# ⚙️ PROGRAM FEATURES
 
-##Feature Overview
+## Feature Overview
 | Feature | Technology | Description |
 |---------|------------|-------------|
 | Concurrent File Reading | Threading | 4 threads read file simultaneously |
@@ -183,7 +183,7 @@ python data_validator.py
 | Error Summary Report | Analytics | Breakdown of error types |
 | Performance Graph | Matplotlib | Visual performance comparison |
 
-##Data Validation Rules
+## Data Validation Rules
 | Field | Validation Rule | Error Type |
 |-------|----------------|------------|
 | Age | Must be numeric and present | MISSING_AGE |
@@ -194,20 +194,20 @@ python data_validator.py
 
 ---
 
-#📁 SAMPLE OUTPUT
+# 📁 SAMPLE OUTPUT
 Sample Input Data Format
 Each record has 6 fields separated by |:
 
 user_id|name|email|age|city|amount
 
-###Example valid record:
+### Example valid record:
 USER00000001|JohnDoe|john@example.com|25|KL|1500.50
-###Example invalid records:
+### Example invalid records:
 USER00000123|TestUser|invalid_email||KL|1000        ← Missing age, invalid email
 USER00000456|BadData|valid@email.com|30|KL|invalid   ← Invalid amount
 USER00000789|Duplicate|email@test.com|25|PG|500      ← Duplicate ID
 
-#Output File 1: valid_records.txt
+# Output File 1: valid_records.txt
 
 # VALID RECORDS REPORT
 # Generated: 2026-05-01 15:30:00
@@ -217,7 +217,7 @@ USER00000001|JohnDoe|john@example.com|25|KL|1500.50
 USER00000002|JaneSmith|jane@example.com|30|JB|2500.00
 USER00000003|BobWilson|bob@example.com|28|PG|1800.75
 
-#Output File 2: invalid_records.txt
+# Output File 2: invalid_records.txt
 
 # INVALID RECORDS REPORT
 # Generated: 2026-05-01 15:30:00
@@ -226,7 +226,7 @@ USER00000003|BobWilson|bob@example.com|28|PG|1800.75
 USER00000123|TestUser|invalid_email||KL|1000|MISSING_AGE|INVALID_EMAIL
 USER00000456|BadData|valid@email.com|30|KL|invalid_amount|INVALID_AMOUNT
 
-#Output File 3: error_report.txt
+# Output File 3: error_report.txt
 
 ============================================================
 ERROR SUMMARY REPORT
@@ -246,7 +246,7 @@ ERROR TYPE BREAKDOWN:
 
   ---
 
-#📊 PERFORMANCE RESULTS
+# 📊 PERFORMANCE RESULTS
 Performance Graph
 
 Processing Time Comparison (1,000,000 Records)
