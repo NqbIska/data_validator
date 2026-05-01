@@ -98,10 +98,10 @@ python data_validator.py
 
 🚀 HOW TO RUN THE PROGRAM
 ### Step 1: Program Starts
-======================================================================
-📊 MEGA DATA CLEANER & VALIDATOR
+
+**📊 MEGA DATA CLEANER & VALIDATOR**
    Process 1 MILLION Records in Seconds
-======================================================================
+
 
 ⚙️  Configuration:
    • Target Records    : 1,000,000
@@ -135,39 +135,40 @@ python data_validator.py
 
 ### Step 6: Saving Separate Reports
 
-📁 SAVING SEPARATE REPORTS...
+**📁 SAVING SEPARATE REPORTS...**
 --------------------------------------------------
   ✓ VALID records saved: valid_records.txt (892,340 records)
+ 
   ✓ INVALID records saved: invalid_records.txt (107,660 records)
+  
   ✓ Error summary saved: error_report.txt
 
 ### Step 7: Final Report
 
-======================================================================
-📊 DATA VALIDATION REPORT
-======================================================================
+**📊 DATA VALIDATION REPORT**
 
-📈 SUMMARY:
+
+### 📈 SUMMARY:
 --------------------------------------------------
   Total Records       : 1,000,000
   Valid Records       : 892,340 (89.2%)
   Invalid Records     : 107,660 (10.8%)
 
-⚠️  ISSUES DETECTED:
+### ⚠️  ISSUES DETECTED:
 --------------------------------------------------
   Missing Age         : 28,456
   Invalid Email       : 35,234
   Invalid Amount      : 25,123
 
-⚡ PERFORMANCE:
+### ⚡ PERFORMANCE:
 --------------------------------------------------
   Sequential (est)   : 15.000s
   Parallel           : 8.500s
   SPEEDUP            : 1.76x FASTER 🚀
 
-======================================================================
-✅ VALIDATION COMPLETE!
-======================================================================
+
+### ✅ VALIDATION COMPLETE!
+
 
 ---
 
@@ -195,13 +196,13 @@ python data_validator.py
 ---
 
 # 📁 SAMPLE OUTPUT
-Sample Input Data Format
-Each record has 6 fields separated by |:
+### Sample Input Data Format Each record has 6 fields separated by |:
 
 user_id|name|email|age|city|amount
 
 ### Example valid record:
 USER00000001|JohnDoe|john@example.com|25|KL|1500.50
+
 ### Example invalid records:
 USER00000123|TestUser|invalid_email||KL|1000        ← Missing age, invalid email
 USER00000456|BadData|valid@email.com|30|KL|invalid   ← Invalid amount
@@ -209,7 +210,7 @@ USER00000789|Duplicate|email@test.com|25|PG|500      ← Duplicate ID
 
 ### Output File 1: valid_records.txt
 
-### VALID RECORDS REPORT
+## VALID RECORDS REPORT
  Generated: 2026-05-01 15:30:00
  Total Valid Records: 892,340
 
@@ -228,26 +229,27 @@ USER00000456|BadData|valid@email.com|30|KL|invalid_amount|INVALID_AMOUNT
 
 ### Output File 3: error_report.txt
 
-# ERROR SUMMARY REPORT
+## ERROR SUMMARY REPORT
 
 Generated: 2026-05-01 15:30:00
 
-ERROR TYPE BREAKDOWN:
-----------------------------------------
-  INVALID_EMAIL        : 35,234 (32.7%)
-  MISSING_AGE          : 28,456 (26.4%)
-  INVALID_AMOUNT       : 25,123 (23.3%)
-  INVALID_CITY         : 12,345 (11.5%)
-  DUPLICATE_ID         : 5,678 (5.3%)
-----------------------------------------
-  TOTAL INVALID        : 107,660
+### ERROR TYPE BREAKDOWN
+
+| Error Type | Count | Percentage | Bar |
+|------------|-------|------------|-----|
+| INVALID_EMAIL | 35,234 | 32.7% | ████████████████████████████████████ |
+| MISSING_AGE | 28,456 | 26.4% | ██████████████████████████████░░░░░░ |
+| INVALID_AMOUNT | 25,123 | 23.3% | ██████████████████████████░░░░░░░░░░ |
+| INVALID_CITY | 12,345 | 11.5% | ████████████░░░░░░░░░░░░░░░░░░░░░░░░ |
+| DUPLICATE_ID | 5,678 | 5.3% | ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ |
+| **TOTAL** | **107,660** | **100%** | |
 
   ---
 
 # 📊 PERFORMANCE RESULTS
 Performance Graph
 
-# Processing Time Comparison (1,000,000 Records)
+## Processing Time Comparison (1,000,000 Records)
 ### ════════════════════════════════════════════════════════
 
 ### Sequential    ██████████████████████████████████████████ 15.00s
@@ -263,7 +265,29 @@ Performance Graph
 
 
 # Performance Summary Table
-Mode	Time (seconds)	Records/sec	Speedup
-Sequential	15.00	66,667	1.00x
-Threading	12.50	80,000	1.20x
-Parallel	8.50	117,647	1.76x
+## PERFORMANCE COMPARISON TABLE
+
+| Mode | Time (seconds) | Records/sec | Speedup | Bar |
+|------|----------------|-------------|---------|-----|
+| Sequential | 15.00 | 66,667 | 1.00x | ████████████████████████████████████████ 
+| Threading | 12.50 | 80,000 | 1.20x | ████████████████████████████████████░░░░ 
+| Parallel | 8.50 | 117,647 | 1.76x | ██████████████████████░░░░░░░░░░░░░░░░░░ 
+
+---
+# CONCLUSION
+
+**The Mega Data Cleaner & Validator successfully demonstrates both concurrent and parallel programming techniques in Python by processing up to 1 million records efficiently. The program uses:**
+
+•	Threading for concurrent file I/O operations
+•	Multiprocessing for parallel data validation
+•	Batch processing for memory efficiency
+•	Separate reporting for valid and invalid records
+
+**The performance comparison clearly shows that parallel processing achieves 1.8x speedup compared to sequential processing, processing**
+
+---
+
+## Source code : 
+
+## Youtube :
+
