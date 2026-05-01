@@ -88,14 +88,15 @@ Download from [python.org](https://python.org) (version 3.8 or higher)
 mkdir data-validator
 cd data-validator
 
-Step 3: Download Source Code
+### Step 3: Download Source Code
 Save the code as data_validator.py in your project folder.
 
-Step 4: Run the Program
+### Step 4: Run the Program
 
 python data_validator.py
 
-##🚀 HOW TO RUN THE PROGRAM
+---
+#🚀 HOW TO RUN THE PROGRAM
 ### Step 1: Program Starts
 ======================================================================
 📊 MEGA DATA CLEANER & VALIDATOR
@@ -107,7 +108,7 @@ python data_validator.py
    • CPU Cores         : 8
    • Threads for I/O   : 4
 
-   Step 2: Data Generation (First Run Only)
+   ### Step 2: Data Generation (First Run Only)
 
    [+] Generating 1,000,000 data records...
     This may take 1-2 minutes...
@@ -117,22 +118,22 @@ python data_validator.py
   Generated 1,000,000/1,000,000 records
 [+] Data file created: million_data.txt (85.00 MB)
 
-Step 3: Concurrent File Reading (Threading)
+### Step 3: Concurrent File Reading (Threading)
 
 [📖 CONCURRENT] Reading file with 4 threads...
 [✓] Read 1,000,000 lines in 2.500s
 
-Step 4: Sequential Benchmark
+### Step 4: Sequential Benchmark
 
 [🐢 SEQUENTIAL] Running benchmark on 10,000 records...
 [✓] Benchmark completed in 0.150s
 
-Step 5: Parallel Validation (Multiprocessing)
+### Step 5: Parallel Validation (Multiprocessing)
 
 [⚡ PARALLEL] Validating 1,000,000 records using 8 CPU cores...
 [✓] Validation completed in 8.500s (117,647 records/sec)
 
-Step 6: Saving Separate Reports
+### Step 6: Saving Separate Reports
 
 📁 SAVING SEPARATE REPORTS...
 --------------------------------------------------
@@ -140,7 +141,7 @@ Step 6: Saving Separate Reports
   ✓ INVALID records saved: invalid_records.txt (107,660 records)
   ✓ Error summary saved: error_report.txt
 
-Step 7: Final Report
+### Step 7: Final Report
 
 ======================================================================
 📊 DATA VALIDATION REPORT
@@ -168,39 +169,45 @@ Step 7: Final Report
 ✅ VALIDATION COMPLETE!
 ======================================================================
 
-⚙️ PROGRAM FEATURES
+---
 
-Feature Overview
-Feature	Technology	Description
-Concurrent File Reading	Threading	4 threads read file simultaneously
-Parallel Validation	Multiprocessing	All CPU cores validate data
-Valid Records Export	File I/O	Save only clean data
-Invalid Records Export	File I/O	Save problematic data with errors
-Error Summary Report	Analytics	Breakdown of error types
-Performance Graph	Matplotlib	Visual performance comparison
+#⚙️ PROGRAM FEATURES
 
-Data Validation Rules
-Field	Validation Rule	Error Type
-Age	Must be numeric and present	MISSING_AGE
-Email	Must contain @ and .	INVALID_EMAIL
-Amount	Must be a valid number	INVALID_AMOUNT
-City	Must be in allowed list	INVALID_CITY
-User ID	No duplicates allowed	DUPLICATE_ID
+##Feature Overview
+| Feature | Technology | Description |
+|---------|------------|-------------|
+| Concurrent File Reading | Threading | 4 threads read file simultaneously |
+| Parallel Validation | Multiprocessing | All CPU cores validate data |
+| Valid Records Export | File I/O | Save only clean data |
+| Invalid Records Export | File I/O | Save problematic data with errors |
+| Error Summary Report | Analytics | Breakdown of error types |
+| Performance Graph | Matplotlib | Visual performance comparison |
 
-📁 SAMPLE OUTPUT
+##Data Validation Rules
+| Field | Validation Rule | Error Type |
+|-------|----------------|------------|
+| Age | Must be numeric and present | MISSING_AGE |
+| Email | Must contain @ and . | INVALID_EMAIL |
+| Amount | Must be a valid number | INVALID_AMOUNT |
+| City | Must be in allowed list | INVALID_CITY |
+| User ID | No duplicates allowed | DUPLICATE_ID |
+
+---
+
+#📁 SAMPLE OUTPUT
 Sample Input Data Format
 Each record has 6 fields separated by |:
 
 user_id|name|email|age|city|amount
 
-Example valid record:
+###Example valid record:
 USER00000001|JohnDoe|john@example.com|25|KL|1500.50
-Example invalid records:
+###Example invalid records:
 USER00000123|TestUser|invalid_email||KL|1000        ← Missing age, invalid email
 USER00000456|BadData|valid@email.com|30|KL|invalid   ← Invalid amount
 USER00000789|Duplicate|email@test.com|25|PG|500      ← Duplicate ID
 
-Output File 1: valid_records.txt
+#Output File 1: valid_records.txt
 
 # VALID RECORDS REPORT
 # Generated: 2026-05-01 15:30:00
@@ -210,7 +217,7 @@ USER00000001|JohnDoe|john@example.com|25|KL|1500.50
 USER00000002|JaneSmith|jane@example.com|30|JB|2500.00
 USER00000003|BobWilson|bob@example.com|28|PG|1800.75
 
-Output File 2: invalid_records.txt
+#Output File 2: invalid_records.txt
 
 # INVALID RECORDS REPORT
 # Generated: 2026-05-01 15:30:00
@@ -219,7 +226,7 @@ Output File 2: invalid_records.txt
 USER00000123|TestUser|invalid_email||KL|1000|MISSING_AGE|INVALID_EMAIL
 USER00000456|BadData|valid@email.com|30|KL|invalid_amount|INVALID_AMOUNT
 
-Output File 3: error_report.txt
+#Output File 3: error_report.txt
 
 ============================================================
 ERROR SUMMARY REPORT
@@ -237,7 +244,9 @@ ERROR TYPE BREAKDOWN:
 ----------------------------------------
   TOTAL INVALID        : 107,660
 
-📊 PERFORMANCE RESULTS
+  ---
+
+#📊 PERFORMANCE RESULTS
 Performance Graph
 
 Processing Time Comparison (1,000,000 Records)
