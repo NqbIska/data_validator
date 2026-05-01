@@ -149,19 +149,18 @@ python data_validator.py
 
 
 ### 📈 SUMMARY:
---------------------------------------------------
   Total Records       : 1,000,000
   Valid Records       : 892,340 (89.2%)
   Invalid Records     : 107,660 (10.8%)
 
 ### ⚠️  ISSUES DETECTED:
---------------------------------------------------
+
   Missing Age         : 28,456
   Invalid Email       : 35,234
   Invalid Amount      : 25,123
 
 ### ⚡ PERFORMANCE:
---------------------------------------------------
+
   Sequential (est)   : 15.000s
   Parallel           : 8.500s
   SPEEDUP            : 1.76x FASTER 🚀
