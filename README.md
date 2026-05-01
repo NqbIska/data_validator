@@ -26,7 +26,7 @@
 
 - **Threading** for concurrent file I/O
 - **Multiprocessing** for parallel data validation
-- **Auto-generated performance graphs**
+
 
 ### What This Program Does
 
@@ -36,7 +36,6 @@
 | Concurrent Reading | Uses 4 threads to read file |
 | Parallel Validation | Uses all CPU cores to validate data |
 | Separate Reports | Saves valid/invalid records to different files |
-| Performance Graph | Generates comparison chart |
 
 ### How It Works
 INPUT: 1,000,000 raw data records
@@ -51,7 +50,7 @@ OUTPUT:
 ✅ valid_records.txt (Clean data only)
 ❌ invalid_records.txt (Problematic data + error types)
 📊 error_report.txt (Error summary)
-📈 performance_graph.png (Performance report)
+
 
 
 ---
@@ -96,8 +95,9 @@ Save the code as data_validator.py in your project folder.
 python data_validator.py
 
 ---
-#🚀 HOW TO RUN THE PROGRAM
-### Step 1: Program Starts
+
+🚀 HOW TO RUN THE PROGRAM
+# Step 1: Program Starts
 ======================================================================
 📊 MEGA DATA CLEANER & VALIDATOR
    Process 1 MILLION Records in Seconds
